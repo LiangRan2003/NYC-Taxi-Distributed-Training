@@ -1,0 +1,20 @@
+[Diag] test_size=11409607, test_log_mean=2.9450, test_log_std=0.5394
+[rank 0] eval progress: 5/16 files (6.7s elapsed)
+[rank 3] eval progress: 5/15 files (6.9s elapsed)
+[rank 1] eval progress: 5/16 files (7.0s elapsed)
+[rank 2] eval progress: 5/15 files (7.2s elapsed)
+[rank 1] eval progress: 10/16 files (13.6s elapsed)
+[rank 0] eval progress: 10/16 files (13.7s elapsed)
+[rank 3] eval progress: 10/15 files (14.0s elapsed)
+[rank 2] eval progress: 10/15 files (14.3s elapsed)
+/home/liangran85/mpi_eval_stream.py:10: RuntimeWarning: overflow encountered in exp
+  def sigmoid(z): return 1/(1+np.exp(-z))
+/home/liangran85/mpi_eval_stream.py:10: RuntimeWarning: overflow encountered in exp
+  def sigmoid(z): return 1/(1+np.exp(-z))
+[rank 1] eval progress: 15/16 files (20.4s elapsed)
+[rank 0] eval progress: 15/16 files (20.5s elapsed)
+[rank 3] eval progress: 15/15 files (20.9s elapsed)
+[rank 2] eval progress: 15/15 files (21.0s elapsed)
+[rank 1] eval progress: 16/16 files (21.4s elapsed)
+[rank 0] eval progress: 16/16 files (21.5s elapsed)
+[Eval] RMSE_USD=19.30

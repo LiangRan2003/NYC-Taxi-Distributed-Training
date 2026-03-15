@@ -1,0 +1,16 @@
+[Diag] test_size=11409607, test_log_mean=2.9450, test_log_std=0.5394
+[rank 1] eval progress: 5/16 files (5.2s elapsed)
+[rank 0] eval progress: 5/16 files (5.3s elapsed)
+[rank 3] eval progress: 5/15 files (5.3s elapsed)
+[rank 2] eval progress: 5/15 files (5.4s elapsed)
+[rank 3] eval progress: 10/15 files (10.5s elapsed)
+[rank 1] eval progress: 10/16 files (10.5s elapsed)
+[rank 0] eval progress: 10/16 files (10.6s elapsed)
+[rank 2] eval progress: 10/15 files (10.7s elapsed)
+[rank 3] eval progress: 15/15 files (15.9s elapsed)
+[rank 1] eval progress: 15/16 files (16.0s elapsed)
+[rank 0] eval progress: 15/16 files (16.0s elapsed)
+[rank 2] eval progress: 15/15 files (16.0s elapsed)
+[rank 1] eval progress: 16/16 files (16.5s elapsed)
+[rank 0] eval progress: 16/16 files (16.6s elapsed)
+[Eval] RMSE_USD=19.23

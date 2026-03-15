@@ -1,0 +1,91 @@
+usage: mpi_train_with_curve.py
+       [-h]
+       --data_dir
+       DATA_DIR
+       [--target {amount,log}]
+       [--hidden HIDDEN]
+       [--activation {relu,tanh,sigmoid}]
+       [--lr LR]
+       [--batch BATCH]
+       [--epochs EPOCHS]
+       [--max_steps_per_epoch MAX_STEPS_PER_EPOCH]
+       [--clip CLIP]
+       --save_path
+       SAVE_PATH
+       [--seed SEED]
+       [--curve_every CURVE_EVERY]
+       [--curve_log CURVE_LOG]
+       [--debug_parallel]
+       [--check_theta_every CHECK_THETA_EVERY]
+usage: mpi_train_with_curve.py
+       [-h]
+       --data_dir
+       DATA_DIR
+       [--target {amount,log}]
+       [--hidden HIDDEN]
+       [--activation {relu,tanh,sigmoid}]
+       [--lr LR]
+       [--batch BATCH]
+       [--epochs EPOCHS]
+       [--max_steps_per_epoch MAX_STEPS_PER_EPOCH]
+       [--clip CLIP]
+       --save_path
+       SAVE_PATH
+       [--seed SEED]
+       [--curve_every CURVE_EVERY]
+       [--curve_log CURVE_LOG]
+       [--debug_parallel]
+       [--check_theta_every CHECK_THETA_EVERY]
+mpi_train_with_curve.py: error: the following arguments are required: --data_dir, --save_path
+mpi_train_with_curve.py: error: the following arguments are required: --data_dir, --save_path
+usage: mpi_train_with_curve.py
+       [-h]
+       --data_dir
+       DATA_DIR
+       [--target {amount,log}]
+       [--hidden HIDDEN]
+       [--activation {relu,tanh,sigmoid}]
+       [--lr LR]
+       [--batch BATCH]
+       [--epochs EPOCHS]
+       [--max_steps_per_epoch MAX_STEPS_PER_EPOCH]
+       [--clip CLIP]
+       --save_path
+       SAVE_PATH
+       [--seed SEED]
+       [--curve_every CURVE_EVERY]
+       [--curve_log CURVE_LOG]
+       [--debug_parallel]
+       [--check_theta_every CHECK_THETA_EVERY]
+usage: mpi_train_with_curve.py
+       [-h]
+       --data_dir
+       DATA_DIR
+       [--target {amount,log}]
+       [--hidden HIDDEN]
+       [--activation {relu,tanh,sigmoid}]
+       [--lr LR]
+       [--batch BATCH]
+       [--epochs EPOCHS]
+       [--max_steps_per_epoch MAX_STEPS_PER_EPOCH]
+       [--clip CLIP]
+       --save_path
+       SAVE_PATH
+       [--seed SEED]
+       [--curve_every CURVE_EVERY]
+       [--curve_log CURVE_LOG]
+       [--debug_parallel]
+       [--check_theta_every CHECK_THETA_EVERY]
+mpi_train_with_curve.py: error: the following arguments are required: --data_dir, --save_path
+mpi_train_with_curve.py: error: the following arguments are required: --data_dir, --save_path
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[6388,1],2]
+  Exit code:    2
+--------------------------------------------------------------------------

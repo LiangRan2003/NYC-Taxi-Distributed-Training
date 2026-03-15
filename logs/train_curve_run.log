@@ -1,0 +1,67 @@
+[rank 1] using 18 files (of 72)
+[rank 2] using 18 files (of 72)
+[rank 3] using 18 files (of 72)
+[rank 0] using 18 files (of 72)
+[epoch 1] progress: 5/200 batches
+[curve] k=10 R_hat=305.608755 elapsed=3.8s
+[epoch 1] progress: 10/200 batches
+[epoch 1] progress: 15/200 batches
+[curve] k=20 R_hat=256.259090 elapsed=7.4s
+[epoch 1] progress: 20/200 batches
+[epoch 1] progress: 25/200 batches
+[curve] k=30 R_hat=224.956835 elapsed=10.9s
+[epoch 1] progress: 30/200 batches
+[epoch 1] progress: 35/200 batches
+[curve] k=40 R_hat=197.180534 elapsed=14.4s
+[epoch 1] progress: 40/200 batches
+[epoch 1] progress: 45/200 batches
+[curve] k=50 R_hat=165.336505 elapsed=17.8s
+[epoch 1] progress: 50/200 batches
+[epoch 1] progress: 55/200 batches
+[curve] k=60 R_hat=163.025061 elapsed=21.3s
+[epoch 1] progress: 60/200 batches
+[epoch 1] progress: 65/200 batches
+[curve] k=70 R_hat=141.080312 elapsed=24.8s
+[epoch 1] progress: 70/200 batches
+[epoch 1] progress: 75/200 batches
+[curve] k=80 R_hat=120.264780 elapsed=28.3s
+[epoch 1] progress: 80/200 batches
+[epoch 1] progress: 85/200 batches
+[curve] k=90 R_hat=148.813784 elapsed=31.6s
+[epoch 1] progress: 90/200 batches
+[epoch 1] progress: 95/200 batches
+[curve] k=100 R_hat=147.001910 elapsed=35.0s
+[epoch 1] progress: 100/200 batches
+[epoch 1] progress: 105/200 batches
+[curve] k=110 R_hat=108.196355 elapsed=38.6s
+[epoch 1] progress: 110/200 batches
+[epoch 1] progress: 115/200 batches
+[curve] k=120 R_hat=119.423484 elapsed=42.1s
+[epoch 1] progress: 120/200 batches
+[epoch 1] progress: 125/200 batches
+[curve] k=130 R_hat=127.770041 elapsed=45.5s
+[epoch 1] progress: 130/200 batches
+[epoch 1] progress: 135/200 batches
+[curve] k=140 R_hat=126.307085 elapsed=49.0s
+[epoch 1] progress: 140/200 batches
+[epoch 1] progress: 145/200 batches
+[curve] k=150 R_hat=99.759557 elapsed=52.3s
+[epoch 1] progress: 150/200 batches
+[epoch 1] progress: 155/200 batches
+[curve] k=160 R_hat=108.890625 elapsed=55.9s
+[epoch 1] progress: 160/200 batches
+[epoch 1] progress: 165/200 batches
+[curve] k=170 R_hat=138.067728 elapsed=59.5s
+[epoch 1] progress: 170/200 batches
+[epoch 1] progress: 175/200 batches
+[curve] k=180 R_hat=116.056628 elapsed=62.9s
+[epoch 1] progress: 180/200 batches
+[epoch 1] progress: 185/200 batches
+[curve] k=190 R_hat=115.312897 elapsed=66.4s
+[epoch 1] progress: 190/200 batches
+[epoch 1] progress: 195/200 batches
+[curve] k=200 R_hat=144.581636 elapsed=70.1s
+[epoch 1] progress: 200/200 batches
+[Epoch 1] (training only)
+[Saved] /tmp/curve_only.npz
+Train time ~70.1s

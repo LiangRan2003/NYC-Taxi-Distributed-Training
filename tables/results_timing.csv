@@ -1,0 +1,5 @@
+timestamp,np,activation,batch,hidden,epochs,lr,train_time_s,ckpt,train_log,
+2025-09-25T07:26:02Z,1,relu,1024,128,2,1e-3,2.9,/home/liangran85/ckpts/timing_np1_relu_h128_b1024_ep2.npz,/home/liangran85/logs/timing_np1.log,
+2025-09-25T07:26:11Z,2,relu,1024,128,2,1e-3,1.9,/home/liangran85/ckpts/timing_np2_relu_h128_b1024_ep2.npz,/home/liangran85/logs/timing_np2.log,
+2025-09-25T07:26:17Z,4,relu,1024,128,2,1e-3,1.5,/home/liangran85/ckpts/timing_np4_relu_h128_b1024_ep2.npz,/home/liangran85/logs/timing_np4.log,
+2025-09-25T07:26:24Z,8,relu,1024,128,2,1e-3,2.1,/home/liangran85/ckpts/timing_np8_relu_h128_b1024_ep2.npz,/home/liangran85/logs/timing_np8.log,#NAME?

@@ -1,0 +1,16 @@
+timestamp,activation,batch,hidden,epochs,lr,train_time_s,test_RMSE_USD,ckpt,train_log,eval_log
+2025-09-25T06:42:41Z,relu,256,128,4,1e-3,1.9,19.29,/home/liangran85/ckpts/taxi_relu_h128_b256_ep4.npz,/home/liangran85/logs/train_relu_b256.log,/home/liangran85/logs/eval_relu_b256.log
+2025-09-25T06:43:36Z,relu,512,128,4,1e-3,32.1,19.28,/home/liangran85/ckpts/taxi_relu_h128_b512_ep4.npz,/home/liangran85/logs/train_relu_b512.log,/home/liangran85/logs/eval_relu_b512.log
+2025-09-25T06:45:49Z,relu,1024,128,4,1e-3,110.9,19.26,/home/liangran85/ckpts/taxi_relu_h128_b1024_ep4.npz,/home/liangran85/logs/train_relu_b1024.log,/home/liangran85/logs/eval_relu_b1024.log
+2025-09-25T06:48:12Z,relu,2048,128,4,1e-3,120.4,19.25,/home/liangran85/ckpts/taxi_relu_h128_b2048_ep4.npz,/home/liangran85/logs/train_relu_b2048.log,/home/liangran85/logs/eval_relu_b2048.log
+2025-09-25T06:51:14Z,relu,4096,128,4,1e-3,159.7,19.23,/home/liangran85/ckpts/taxi_relu_h128_b4096_ep4.npz,/home/liangran85/logs/train_relu_b4096.log,/home/liangran85/logs/eval_relu_b4096.log
+2025-09-25T06:51:40Z,tanh,256,128,4,1e-3,2.1,23.33,/home/liangran85/ckpts/taxi_tanh_h128_b256_ep4.npz,/home/liangran85/logs/train_tanh_b256.log,/home/liangran85/logs/eval_tanh_b256.log
+2025-09-25T06:52:36Z,tanh,512,128,4,1e-3,31.3,23.27,/home/liangran85/ckpts/taxi_tanh_h128_b512_ep4.npz,/home/liangran85/logs/train_tanh_b512.log,/home/liangran85/logs/eval_tanh_b512.log
+2025-09-25T06:54:50Z,tanh,1024,128,4,1e-3,110.5,23.24,/home/liangran85/ckpts/taxi_tanh_h128_b1024_ep4.npz,/home/liangran85/logs/train_tanh_b1024.log,/home/liangran85/logs/eval_tanh_b1024.log
+2025-09-25T06:57:16Z,tanh,2048,128,4,1e-3,121.9,23.23,/home/liangran85/ckpts/taxi_tanh_h128_b2048_ep4.npz,/home/liangran85/logs/train_tanh_b2048.log,/home/liangran85/logs/eval_tanh_b2048.log
+2025-09-25T07:00:35Z,tanh,4096,128,4,1e-3,174.8,23.23,/home/liangran85/ckpts/taxi_tanh_h128_b4096_ep4.npz,/home/liangran85/logs/train_tanh_b4096.log,/home/liangran85/logs/eval_tanh_b4096.log
+2025-09-25T07:01:05Z,sigmoid,256,128,4,1e-3,2.2,19.30,/home/liangran85/ckpts/taxi_sigmoid_h128_b256_ep4.npz,/home/liangran85/logs/train_sigmoid_b256.log,/home/liangran85/logs/eval_sigmoid_b256.log
+2025-09-25T07:02:09Z,sigmoid,512,128,4,1e-3,36.1,19.30,/home/liangran85/ckpts/taxi_sigmoid_h128_b512_ep4.npz,/home/liangran85/logs/train_sigmoid_b512.log,/home/liangran85/logs/eval_sigmoid_b512.log
+2025-09-25T07:04:27Z,sigmoid,1024,128,4,1e-3,110.5,19.29,/home/liangran85/ckpts/taxi_sigmoid_h128_b1024_ep4.npz,/home/liangran85/logs/train_sigmoid_b1024.log,/home/liangran85/logs/eval_sigmoid_b1024.log
+2025-09-25T07:06:57Z,sigmoid,2048,128,4,1e-3,122.9,19.30,/home/liangran85/ckpts/taxi_sigmoid_h128_b2048_ep4.npz,/home/liangran85/logs/train_sigmoid_b2048.log,/home/liangran85/logs/eval_sigmoid_b2048.log
+2025-09-25T07:10:28Z,sigmoid,4096,128,4,1e-3,183.8,19.30,/home/liangran85/ckpts/taxi_sigmoid_h128_b4096_ep4.npz,/home/liangran85/logs/train_sigmoid_b4096.log,/home/liangran85/logs/eval_sigmoid_b4096.log

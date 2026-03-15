@@ -1,0 +1,25 @@
+[rank 2] using 18 files (of 72)
+[rank 3] using 18 files (of 72)
+[rank 0] using 18 files (of 72)
+[rank 1] using 18 files (of 72)
+[rank 2] step 0 ||g_local||=1.7015e+03 ||g_avg||=9.6402e+02
+[rank 3] step 0 ||g_local||=1.4896e+03 ||g_avg||=9.6402e+02
+[rank 1] step 0 ||g_local||=1.4723e+03 ||g_avg||=9.6402e+02[rank 0] step 0 ||g_local||=8.0243e+02 ||g_avg||=9.6402e+02
+
+[epoch 1] progress: 5/40 batches
+[epoch 1] progress: 10/40 batches
+[epoch 1] progress: 15/40 batches
+[curve] k=20 R_hat=256.259090 elapsed=7.5s
+[epoch 1] progress: 20/40 batches
+[rank 3] step 20 ||g_local||=1.3696e+03 ||g_avg||=8.1442e+02
+[rank 0] step 20 ||g_local||=6.1432e+02 ||g_avg||=8.1442e+02
+[rank 1] step 20 ||g_local||=1.0455e+03 ||g_avg||=8.1442e+02
+[rank 2] step 20 ||g_local||=1.5714e+03 ||g_avg||=8.1442e+02
+[epoch 1] progress: 25/40 batches
+[epoch 1] progress: 30/40 batches
+[epoch 1] progress: 35/40 batches
+[curve] k=40 R_hat=197.180534 elapsed=14.4s
+[epoch 1] progress: 40/40 batches
+[Epoch 1] (training only)
+[Saved] /tmp/dryrun.npz
+Train time ~14.4s
