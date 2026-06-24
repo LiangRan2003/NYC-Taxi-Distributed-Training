@@ -1,4 +1,5 @@
 import numpy as np
+import pytest
 
 import mpi_eval_stream
 import mpi_train_save
@@ -13,6 +14,16 @@ class SingleRankComm:
 
     def allreduce(self, value, op=None):
         return value
+
+
+def test_activation_functions_and_derivatives_at_known_points():
+    x = np.array([-1.0, 0.0, 1.0])
+
+    np.testing.assert_allclose(mpi_train_save.relu(x), [0.0, 0.0, 1.0])
+    np.testing.assert_allclose(mpi_train_save.d_relu(x), [0.0, 0.0, 1.0])
+    np.testing.assert_allclose(mpi_train_save.d_tanh(x), 1 - np.tanh(x) ** 2)
+    sigmoid = mpi_train_save.sigmoid(x)
+    np.testing.assert_allclose(mpi_train_save.d_sigmoid(x), sigmoid * (1 - sigmoid))
 
 
 def test_init_params_shapes_are_reproducible():
@@ -49,12 +60,31 @@ def test_apply_update_with_clipping_keeps_parameters_finite():
     assert any(not np.allclose(before, after) for before, after in zip(original, params))
 
 
+def test_zero_gradient_update_preserves_parameters():
+    params = mpi_train_save.init_params(m=2, n_hidden=2, seed=9)
+    original = [p.copy() for p in params]
+
+    mpi_train_save.apply_update(params, [np.zeros_like(p) for p in params], lr=0.5)
+
+    for before, after in zip(original, params):
+        np.testing.assert_array_equal(before, after)
+
+
 def test_allreduce_same_shape_round_trips_single_rank_array():
     arr = np.array([[1.0, 2.0], [3.0, 4.0]])
 
     reduced = mpi_train_save.allreduce_same_shape(SingleRankComm(), arr)
 
     np.testing.assert_allclose(reduced, arr)
+
+
+def test_allreduce_rejects_shape_mismatch_across_ranks():
+    class MismatchedComm(SingleRankComm):
+        def allgather(self, value):
+            return [value, np.array([99], dtype=np.int64)]
+
+    with pytest.raises(RuntimeError, match="shape mismatch"):
+        mpi_train_save.allreduce_same_shape(MismatchedComm(), np.ones((2, 2)))
 
 
 def test_eval_forward_and_rmse_parallel():
@@ -71,3 +101,7 @@ def test_eval_forward_and_rmse_parallel():
 
     np.testing.assert_allclose(pred, np.array([[2.5, 0.5]]))
     assert rmse == 1.5
+
+
+def test_rmse_parallel_handles_empty_partition():
+    assert mpi_eval_stream.rmse_parallel(SingleRankComm(), sse_local=0.0, n_local=0) == 0.0

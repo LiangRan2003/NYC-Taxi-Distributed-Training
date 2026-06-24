@@ -1,38 +1,31 @@
-# Test Report
+# 测试报告
 
-## Summary
+## 测试结论
 
-Added a focused pytest suite for the MPI-SGD MLP implementation. The tests target the pure numerical core, using a single-rank fake communicator where needed so they can run without `mpirun` or a distributed cluster.
+已为纽约出租车 MPI-SGD 神经网络建立离线数值测试。使用单进程通信器替身验证核心数学逻辑，无需启动 mpirun、集群或读取大规模 Parquet 分片。
 
-## What Is Covered
+## 覆盖范围
 
-- Reproducible MLP parameter initialization.
-- Expected parameter shapes for the one-hidden-layer network.
-- Forward pass and gradient computation produce finite values.
-- Gradient shapes match parameter shapes.
-- Clipped parameter updates change parameters while keeping them finite.
-- Single-rank all-reduce shape validation and round-trip behavior.
-- Evaluation forward pass and RMSE aggregation logic.
+- ReLU、tanh、sigmoid 及其导数的已知值校验。
+- 参数初始化形状与随机种子可复现性。
+- 前向传播、损失和梯度的形状及有限数检查。
+- 梯度裁剪后的参数更新稳定性。
+- 零梯度不会意外修改参数。
+- 单进程 Allreduce 往返结果及跨进程形状不一致防护。
+- 评估前向传播、RMSE 聚合和空分区边界。
 
-## Why This Matters
+## 成果价值
 
-The full project depends on MPI, Parquet data shards, and multi-process execution. These tests cover the math that underpins training and evaluation without requiring the full distributed environment, giving a fast regression check for model logic.
+分布式训练问题通常来自数值逻辑和通信契约。测试把这两部分拆出来快速回归，可在昂贵的多进程训练前发现梯度异常、维度错误、参数更新失控和空数据分区问题。
 
-## Verification
+## 验证方式
 
-Command:
+    python -m pytest -q
 
-```powershell
-python -m pytest -q
-```
+测试结果：9 passed
 
-Result:
+## 测试文件
 
-```text
-5 passed
-```
+- tests/conftest.py
+- tests/test_mlp_math.py
 
-## Files Added
-
-- `tests/conftest.py`
-- `tests/test_mlp_math.py`
